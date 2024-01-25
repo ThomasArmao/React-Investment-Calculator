@@ -1,0 +1,33 @@
+#result {
+  width: 45rem;
+  text-align: end;
+  margin: 4rem auto;
+}
+#result thead td {
+  padding-bottom: 1.5rem;
+  color: #2c986d;
+  font-weight: bold;
+}
+#result tbody {
+  display: table-row-group;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 425px) {
+  #result {
+    width: 90%;
+    text-align: right; /* Allineamento a sinistra per una migliore leggibilità su dispositivi mobili */
+    margin: 2rem auto;
+  }
+
+  #result thead td {
+    padding-bottom: 1rem; /* Riduciamo il padding per uno spaziamento più stretto sui dispositivi mobili */
+    color: #2c986d;
+    font-weight: bold;
+    text-align: right; /* Allineamento a sinistra per una migliore leggibilità su dispositivi mobili */
+  }
+  #result tbody {
+    display: table-row-group;
+    margin-top: 1rem; /* Riduciamo il margine superiore per uno spaziamento più stretto sui dispositivi mobili */
+  }
+}
